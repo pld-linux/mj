@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Mah-Jong
+GenericName=Classic Mahjong game
+Comment=Play classic Mahjong puzzle game
+Type=Application
+Exec=xmj
+Icon=mah-jong
+Terminal=false
+Categories=Game;BoardGame;

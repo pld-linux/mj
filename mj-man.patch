@@ -1,0 +1,53 @@
+--- mah-jong-1.10.orig/xmj.man
++++ mah-jong-1.10/xmj.man
+@@ -10,7 +10,7 @@
+ .TP
+ \fB\\$1\fP (\fB\\$2\fP) \\$3
+ ..
+-.TH XMJ 1 "Mah-Jong" "J.C.Bradfield"
++.TH XMJ 6 "Mah-Jong" "J.C.Bradfield"
+ .SH NAME
+ xmj, mj\-server, mj\-player \- programs for playing Mah\-Jong
+ .SH SYNOPSIS
+--- mah-jong-1.10.orig/mj-server.man
++++ mah-jong-1.10/mj-server.man
+@@ -1,2 +1,2 @@
+ .\" $Header$
+-.so man1/xmj.1
++.so man6/xmj.6
+--- mah-jong-1.10.orig/Makefile
++++ mah-jong-1.10/Makefile
+@@ -54,9 +54,9 @@
+ DESTDIR = /usr/local/
+ BINDIR = bin
+ # The man pages go into $(DESTDIR)$(MANDIR)
+-MANDIR = man/man1
+-# and the appropriate suffix is 1
+-MANSUFFIX = 1
++MANDIR = share/man/man6
++# and the appropriate suffix is 6
++MANSUFFIX = 6
+ 
+ ### End of local configuration.
+ 
+--- mah-jong-1.10.orig/mj-player.man
++++ mah-jong-1.10/mj-player.man
+@@ -1,2 +1,2 @@
+ .\" $Header$
+-.so man1/xmj.1
++.so man6/xmj.6
+--- mah-jong-1.10.orig/Makefile.in
++++ mah-jong-1.10/Makefile.in
+@@ -54,9 +54,9 @@
+ DESTDIR = /usr/local/
+ BINDIR = bin
+ # The man pages go into $(DESTDIR)$(MANDIR)
+-MANDIR = man/man1
+-# and the appropriate suffix is 1
+-MANSUFFIX = 1
++MANDIR = share/man/man6
++# and the appropriate suffix is 6
++MANSUFFIX = 6
+ 
+ ### End of local configuration.
+ 
