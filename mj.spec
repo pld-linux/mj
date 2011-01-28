@@ -10,6 +10,7 @@ Source1:	%{name}.desktop
 Patch0:		%{name}-man.patch
 URL:		http://mahjong.julianbradfield.org/
 BuildRequires:	gtk+2-devel
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
