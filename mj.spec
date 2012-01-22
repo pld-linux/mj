@@ -1,11 +1,11 @@
 Summary:	The original Mah-Jong game
 Name:		mj
-Version:	1.10
+Version:	1.11
 Release:	1
 License:	GPL
 Group:		Applications
 Source0:	http://mahjong.julianbradfield.org/Source/%{name}-%{version}-src.tar.gz
-# Source0-md5:	f9bacf9fd6743d5e3a2fd86863607ce2
+# Source0-md5:	c0cd19620eb3fcef3e0a83eaed6c3780
 Source1:	%{name}.desktop
 Patch0:		%{name}-man.patch
 URL:		http://mahjong.julianbradfield.org/
@@ -25,6 +25,7 @@ tiles.)
 %prep
 %setup -q -n %{name}-%{version}-src
 %patch0 -p1
+%{__sed} -i 's@/usr/lib@%{_libdir}@' Makefile
 
 %build
 %{__make} \
